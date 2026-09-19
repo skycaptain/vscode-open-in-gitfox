@@ -1,0 +1,9 @@
+// Skycaptain: VSCode "Open in Gitfox" Extension
+//
+// See https://go.microsoft.com/fwlink/?LinkId=733558 for usage.
+//
+// SPDX-License-Identifier: BSD-3-Clause
+//
+{
+  "recommendations": ["dbaeumer.vscode-eslint", "ms-vscode.extension-test-runner", "biomejs.biome"]
+}

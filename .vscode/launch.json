@@ -1,0 +1,19 @@
+// Skycaptain: VSCode "Open in Gitfox" Extension
+//
+// See https://go.microsoft.com/fwlink/?linkid=830387m for usage.
+//
+// SPDX-License-Identifier: BSD-3-Clause
+//
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Extension",
+      "type": "extensionHost",
+      "request": "launch",
+      "args": ["--extensionDevelopmentPath=${workspaceFolder}"],
+      "outFiles": ["${workspaceFolder}/out/**/*.js"],
+      "preLaunchTask": "${defaultBuildTask}"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+# Skycaptain: VSCode "Open in Gitfox" Extension
+#
+# See https://lefthook.dev/ for usage.
+#
+# SPDX-License-Identifier: BSD-3-Clause
+#
+---
+pre-commit:
+  parallel: true
+  commands:
+    editorconfig-checker:
+      run: editorconfig-checker -- {staged_files}
+      exclude:
+        - test/fixtures/**
+
+    biome-check:
+      glob: "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}"
+      run: biome check --write --no-errors-on-unmatched --files-ignore-unknown=true --colors=off -- {staged_files}
+      stage_fixed: true
+
+    actionlint:
+      glob: "*.{yml,yaml}"
+      run: actionlint
+      stage_fixed: true
+
+    sort-package-json:
+      glob: "package\\.json"
+      run: sort-package-json
+      stage_fixed: true
+
+commit-msg:
+  commands:
+    commitlint:
+      # {1} is the path to the temporary file containing your commit message
+      run: commitlint --edit {1}
+
+pre-push:
+  commands:
+    unit-test:
+      run: npm test

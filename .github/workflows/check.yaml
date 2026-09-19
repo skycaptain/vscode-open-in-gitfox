@@ -1,0 +1,32 @@
+# Skycaptain: VSCode "Open in Gitfox" Extension
+#
+# SPDX-License-Identifier: BSD-3-Clause
+#
+---
+name: Check
+
+"on": [pull_request]
+
+jobs:
+  lefthook:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0 # required for betterleaks to check the whole history for secrets
+
+      - name: Use mise
+        uses: jdx/mise-action@c2a87611a18de5b3828c5652fe268e992400cb5c # v4.3.0
+
+      - name: Run lefthook
+        run: lefthook run pre-commit --all-files
+
+  commitlint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Run commitlint
+        uses: wagoid/commitlint-github-action@b948419dd99f3fd78a6548d48f94e3df7f6bf3ed # v6.2.1

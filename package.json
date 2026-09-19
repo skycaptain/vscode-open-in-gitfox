@@ -1,0 +1,63 @@
+{
+  "name": "vscode-open-in-gitfox",
+  "displayName": "Open in Gitfox",
+  "version": "0.0.0",
+  "description": "Open project in Gitfox",
+  "categories": [
+    "Other"
+  ],
+  "repository": "skycaptain/vscode-open-in-gitfox",
+  "license": "BSD-3-Clause",
+  "publisher": "skycaptain",
+  "main": "./out/extension.js",
+  "scripts": {
+    "build": "tsc -p ./",
+    "check": "eslint src",
+    "package": "vsce package",
+    "pretest": "npm run build && npm run check",
+    "test": "vscode-test",
+    "vscode:prepublish": "npm run build",
+    "watch": "tsc -watch -p ./"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "openInGitfox.open",
+        "title": "Open in Gitfox"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "openInGitfox.open"
+        }
+      ],
+      "editor/title/context": [
+        {
+          "command": "openInGitfox.open"
+        }
+      ]
+    }
+  },
+  "overrides": {
+    "diff": "^8.0.4",
+    "serialize-javascript": "^7.0.6"
+  },
+  "dependencies": {
+    "find-root": "^1.1.0",
+    "opn": "^6.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^21.2.2",
+    "@commitlint/config-conventional": "^21.2.2",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "26.x",
+    "@types/vscode": "^1.138.0",
+    "@vscode/test-cli": "^0.0.15",
+    "@vscode/test-electron": "^3.1.0",
+    "typescript": "^7.0.2"
+  },
+  "engines": {
+    "vscode": "^1.138.0"
+  }
+}

@@ -1,0 +1,17 @@
+# Skycaptain: VSCode "Open in Gitfox" Extension
+#
+# See https://mise.jdx.dev/ for usage.
+#
+# SPDX-License-Identifier: BSD-3-Clause
+#
+[tools]
+actionlint = "1.7.12"
+biome = "2.5.14"
+editorconfig-checker = "4.0.1"
+lefthook = "2.1.14"
+node = "26.9.0"
+"npm:@vscode/vsce" = "4.0.0"
+"npm:actions-up" = "1.20.0"
+"npm:commitlint" = "21.2.2"
+"npm:npm-check-updates" = "23.1.0"
+"npm:sort-package-json" = "4.0.0"

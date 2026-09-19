@@ -1,0 +1,14 @@
+// Skycaptain: VSCode "Open in Gitfox" Extension
+//
+// SPDX-License-Identifier: BSD-3-Clause
+//
+{
+  "files.exclude": {
+    "out": false
+  },
+  "search.exclude": {
+    "out": true
+  },
+  // Turn off tsc task auto detection since we have the necessary tasks as npm scripts
+  "js/ts.tsc.autoDetect": "off"
+}

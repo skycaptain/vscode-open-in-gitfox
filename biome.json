@@ -1,0 +1,19 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.5.14/schema.json",
+  "formatter": { "indentStyle": "space", "lineWidth": 100 },
+  "linter": {
+    "rules": {
+      "preset": "none",
+      "style": { "useBlockStatements": "warn" },
+      "suspicious": { "noDoubleEquals": "warn" }
+    }
+  },
+  "javascript": { "globals": [] },
+  "overrides": [
+    {
+      "includes": ["**/.vscode/*.json", "**/.devcontainer/*.json"],
+      "json": { "parser": { "allowComments": true } }
+    },
+    { "includes": ["**/*.ts"] }
+  ]
+}
