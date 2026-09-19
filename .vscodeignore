@@ -1,4 +1,6 @@
 **
-!README.md
-!out/
 !LICENSE
+!node_modules/**
+!out/
+!package.json
+!README.md
