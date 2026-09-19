@@ -221,6 +221,7 @@ specifiers = [
 
 [[tools."npm:actions-up"]]
 version = "1.20.0"
+aube = { path = ".mise/locks/npm-actions-up/1.20.0", digest = "sha256:79e2165ea5aca99d3ad5b70f730f8797f56180a070e0d28f00fbae5b91d40258" }
 backend = "npm:actions-up"
 specifiers = [
     "1.20.0",
@@ -229,6 +230,7 @@ specifiers = [
 
 [[tools."npm:commitlint"]]
 version = "21.2.2"
+aube = { path = ".mise/locks/npm-commitlint/21.2.2", digest = "sha256:e9284f8d273a1e0864a17ac6a73351bd1758cffde898ff8160d0f0f4375454f1" }
 backend = "npm:commitlint"
 specifiers = [
     "21.2.2",
@@ -246,6 +248,7 @@ specifiers = [
 
 [[tools."npm:sort-package-json"]]
 version = "4.0.0"
+aube = { path = ".mise/locks/npm-sort-package-json/4.0.0", digest = "sha256:2de77ad8c040659272b1d6208b2f675fb5216614eb08c1e6b481d7fd9576eb29" }
 backend = "npm:sort-package-json"
 specifiers = [
     "4.0.0",
