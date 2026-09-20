@@ -5,7 +5,7 @@
 // SPDX-License-Identifier: BSD-3-Clause
 //
 
-// RELEASE BUSTER: 0
+// RELEASE BUSTER: 1
 
 /** @type {import('semantic-release').GlobalConfig} */
 export default {
