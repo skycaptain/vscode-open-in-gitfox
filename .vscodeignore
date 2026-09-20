@@ -1,6 +1,5 @@
 **
 !LICENSE
-!node_modules/**
-!out/
+!dist/
 !package.json
 !README.md

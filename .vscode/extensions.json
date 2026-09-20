@@ -5,5 +5,10 @@
 // SPDX-License-Identifier: BSD-3-Clause
 //
 {
-  "recommendations": ["dbaeumer.vscode-eslint", "ms-vscode.extension-test-runner", "biomejs.biome"]
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "connor4312.esbuild-problem-matchers",
+    "ms-vscode.extension-test-runner",
+    "biomejs.biome"
+  ]
 }

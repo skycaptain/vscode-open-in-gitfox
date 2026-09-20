@@ -2,22 +2,29 @@
   "name": "vscode-open-in-gitfox",
   "displayName": "Open in Gitfox",
   "version": "0.0.0",
-  "description": "Open project in Gitfox",
+  "description": "Adds a command for opening the current workspace in Gitfox",
   "categories": [
     "Other"
   ],
   "repository": "skycaptain/vscode-open-in-gitfox",
   "license": "BSD-3-Clause",
   "publisher": "skycaptain",
-  "main": "./out/extension.js",
+  "main": "./dist/extension.js",
   "scripts": {
-    "build": "tsc -p ./",
-    "check": "eslint src",
-    "package": "vsce package",
-    "pretest": "npm run build && npm run check",
+    "build": "node build.mjs --production",
+    "check": "npm run check:pre-commit && npm run check:types",
+    "check:pre-commit": "lefthook run pre-commit --all-files",
+    "check:types": "tsc --noEmit",
+    "compile:tests": "tsc -p . --outDir out",
+    "dev:build": "node build.mjs",
+    "dev:package": "vsce package",
+    "pretest": "npm run compile:tests && npm run build",
     "test": "vscode-test",
-    "vscode:prepublish": "npm run build",
-    "watch": "tsc -watch -p ./"
+    "vscode:prepublish": "npm run check && npm run build",
+    "watch": "npm-run-all -p watch:*",
+    "watch:esbuild": "node build.mjs --watch",
+    "watch:tests": "tsc -p . -w --outDir out",
+    "watch:tsc": "tsc --noEmit --watch --project tsconfig.json"
   },
   "contributes": {
     "commands": [
@@ -55,9 +62,14 @@
     "@types/vscode": "^1.138.0",
     "@vscode/test-cli": "^0.0.15",
     "@vscode/test-electron": "^3.1.0",
+    "esbuild": "^0.28.2",
+    "npm-run-all": "^4.1.5",
     "typescript": "^7.0.2"
   },
   "engines": {
     "vscode": "^1.138.0"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
   }
 }
