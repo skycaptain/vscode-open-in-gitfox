@@ -64,7 +64,7 @@
     "typescript": "7.0.2"
   },
   "engines": {
-    "vscode": "^1.138.0"
+    "vscode": "^1.140.0"
   },
   "allowScripts": {
     "esbuild@0.28.2": true
