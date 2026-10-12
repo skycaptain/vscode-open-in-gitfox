@@ -5,7 +5,7 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
 import findRoot from "find-root";
-import open from "opn";
+import open from "open";
 import * as vscode from "vscode";
 
 async function askUserForPath(
@@ -60,7 +60,7 @@ async function openInGitfox(): Promise<void> {
 
     const gitPath = findGitRootPath(activePath);
 
-    await open(gitPath, { app: getAppName() });
+    await open(gitPath, { app: { name: getAppName() } });
   } catch (err) {
     console.error(err);
   }

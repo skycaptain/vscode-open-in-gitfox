@@ -9,6 +9,7 @@
   "repository": "skycaptain/vscode-open-in-gitfox",
   "license": "BSD-3-Clause",
   "publisher": "skycaptain",
+  "type": "module",
   "main": "./dist/extension.js",
   "scripts": {
     "build": "node build.mjs --production",
@@ -52,7 +53,7 @@
   },
   "dependencies": {
     "find-root": "^1.1.0",
-    "opn": "^6.0.0"
+    "open": "^11.0.4"
   },
   "devDependencies": {
     "@commitlint/cli": "21.2.2",
