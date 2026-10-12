@@ -47,47 +47,44 @@ url_api = "https://api.github.com/repos/rhysd/actionlint/releases/assets/3849248
 provenance = "github-attestations"
 
 [[tools.biome]]
-version = "2.5.14"
+version = "2.5.15"
 backend = "aqua:biomejs/biome"
-specifiers = [
-    "2.5.14",
-    "latest",
-]
+specifiers = ["2.5.15"]
 
 [tools.biome."platforms.linux-arm64"]
-checksum = "sha256:50ac7f598985e21b15da57e5d87da0f7ab0c163e6f78eb6d4690309827d77ef8"
-url = "https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.5.14/biome-linux-arm64"
-url_api = "https://api.github.com/repos/biomejs/biome/releases/assets/567471272"
+checksum = "sha256:a56bcd73ddbfdb0f57a82bb67b7ea698eed4027aff602b95aa18fafe919d59e0"
+url = "https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.5.15/biome-linux-arm64"
+url_api = "https://api.github.com/repos/biomejs/biome/releases/assets/601227632"
 provenance = "github-attestations"
 
 [tools.biome."platforms.linux-arm64-musl"]
-checksum = "sha256:50ac7f598985e21b15da57e5d87da0f7ab0c163e6f78eb6d4690309827d77ef8"
-url = "https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.5.14/biome-linux-arm64"
-url_api = "https://api.github.com/repos/biomejs/biome/releases/assets/567471272"
+checksum = "sha256:a56bcd73ddbfdb0f57a82bb67b7ea698eed4027aff602b95aa18fafe919d59e0"
+url = "https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.5.15/biome-linux-arm64"
+url_api = "https://api.github.com/repos/biomejs/biome/releases/assets/601227632"
 provenance = "github-attestations"
 
 [tools.biome."platforms.linux-x64"]
-checksum = "sha256:290c1c85deeaf01310d9187306060b53961574856a7e34f59d9662562e6f19fe"
-url = "https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.5.14/biome-linux-x64"
-url_api = "https://api.github.com/repos/biomejs/biome/releases/assets/567471264"
+checksum = "sha256:5d867a0b2ccea1755b7e508b01d836a8c64e31a1e4d11ec24b43b6b4eec8b3b6"
+url = "https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.5.15/biome-linux-x64"
+url_api = "https://api.github.com/repos/biomejs/biome/releases/assets/601227626"
 provenance = "github-attestations"
 
 [tools.biome."platforms.linux-x64-musl"]
-checksum = "sha256:290c1c85deeaf01310d9187306060b53961574856a7e34f59d9662562e6f19fe"
-url = "https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.5.14/biome-linux-x64"
-url_api = "https://api.github.com/repos/biomejs/biome/releases/assets/567471264"
+checksum = "sha256:5d867a0b2ccea1755b7e508b01d836a8c64e31a1e4d11ec24b43b6b4eec8b3b6"
+url = "https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.5.15/biome-linux-x64"
+url_api = "https://api.github.com/repos/biomejs/biome/releases/assets/601227626"
 provenance = "github-attestations"
 
 [tools.biome."platforms.macos-arm64"]
-checksum = "sha256:3d1194d0a7b720315fb6f8cbafeb5b18ca7100c3e635e8ce82ef46b315de9c0e"
-url = "https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.5.14/biome-darwin-arm64"
-url_api = "https://api.github.com/repos/biomejs/biome/releases/assets/567471268"
+checksum = "sha256:3636796d8c78bfcfe0d45946dc93e21e12d27a49eba7401e18af1ea854d25503"
+url = "https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.5.15/biome-darwin-arm64"
+url_api = "https://api.github.com/repos/biomejs/biome/releases/assets/601227628"
 provenance = "github-attestations"
 
 [tools.biome."platforms.macos-x64"]
-checksum = "sha256:b331448d7afb592cc4674e9bd6905eae5e79f5dd9b34b61b44803a6b7a91b801"
-url = "https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.5.14/biome-darwin-x64"
-url_api = "https://api.github.com/repos/biomejs/biome/releases/assets/567471271"
+checksum = "sha256:86fc618563d19f373ac24eb5b8f1e41bd753a506d5df1f198c152ec365141490"
+url = "https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.5.15/biome-darwin-x64"
+url_api = "https://api.github.com/repos/biomejs/biome/releases/assets/601227623"
 provenance = "github-attestations"
 
 [[tools.editorconfig-checker]]
@@ -223,13 +220,10 @@ backend = "npm:commitlint"
 specifiers = ["21.2.3"]
 
 [[tools."npm:npm-check-updates"]]
-version = "23.1.0"
-aube = { path = ".mise/locks/npm-npm-check-updates/23.1.0", digest = "sha256:384ff2bd89a88c72036920fa60419fd2e629e1937dbde1dab277d8f7482cb6e5" }
+version = "23.1.1"
+aube = { path = ".mise/locks/npm-npm-check-updates/23.1.1", digest = "sha256:f2e78ecfd1bbcc92c3701f887eafe01d8fd95c3a65c845a112c95b2497acf4ac" }
 backend = "npm:npm-check-updates"
-specifiers = [
-    "23.1.0",
-    "latest",
-]
+specifiers = ["23.1.1"]
 
 [[tools."npm:sort-package-json"]]
 version = "4.0.0"
