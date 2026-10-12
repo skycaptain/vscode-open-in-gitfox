@@ -61,9 +61,9 @@ url_api = "https://api.github.com/repos/biomejs/biome/releases/assets/567471272"
 provenance = "github-attestations"
 
 [tools.biome."platforms.linux-arm64-musl"]
-checksum = "sha256:e97669c6e998e4a160c71bd97757eae21fe8c8cb58a044311096779cd1d00454"
-url = "https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.5.14/biome-linux-arm64-musl"
-url_api = "https://api.github.com/repos/biomejs/biome/releases/assets/567471270"
+checksum = "sha256:50ac7f598985e21b15da57e5d87da0f7ab0c163e6f78eb6d4690309827d77ef8"
+url = "https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.5.14/biome-linux-arm64"
+url_api = "https://api.github.com/repos/biomejs/biome/releases/assets/567471272"
 provenance = "github-attestations"
 
 [tools.biome."platforms.linux-x64"]
@@ -73,9 +73,9 @@ url_api = "https://api.github.com/repos/biomejs/biome/releases/assets/567471264"
 provenance = "github-attestations"
 
 [tools.biome."platforms.linux-x64-musl"]
-checksum = "sha256:d15a39b256ca1294fe8f8817f9162f7c26229ca0cb8bd19d0369540c1a01d781"
-url = "https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.5.14/biome-linux-x64-musl"
-url_api = "https://api.github.com/repos/biomejs/biome/releases/assets/567471265"
+checksum = "sha256:290c1c85deeaf01310d9187306060b53961574856a7e34f59d9662562e6f19fe"
+url = "https://github.com/biomejs/biome/releases/download/%40biomejs/biome%402.5.14/biome-linux-x64"
+url_api = "https://api.github.com/repos/biomejs/biome/releases/assets/567471264"
 provenance = "github-attestations"
 
 [tools.biome."platforms.macos-arm64"]
@@ -212,7 +212,7 @@ url = "https://nodejs.org/dist/v26.9.0/node-v26.9.0-darwin-x64.tar.gz"
 
 [[tools."npm:@vscode/vsce"]]
 version = "4.0.0"
-aube = { path = ".mise/locks/npm-vscode-vsce/4.0.0", digest = "sha256:27925728b3a48b5bd06443919bb3f771d5f1a8dfdb38a56ecf161d5a08dda95e" }
+aube = { path = ".mise/locks/npm-vscode-vsce/4.0.0", digest = "sha256:74af375ffbf7765d5c770cf315f380e9488b83b5d5f6e45e47bf46518f2c7594" }
 backend = "npm:@vscode/vsce"
 specifiers = [
     "4.0.0",
@@ -230,7 +230,7 @@ specifiers = [
 
 [[tools."npm:commitlint"]]
 version = "21.2.2"
-aube = { path = ".mise/locks/npm-commitlint/21.2.2", digest = "sha256:e9284f8d273a1e0864a17ac6a73351bd1758cffde898ff8160d0f0f4375454f1" }
+aube = { path = ".mise/locks/npm-commitlint/21.2.2", digest = "sha256:12f9dd189adfddbb0d4f0077bab67a139502b37fa3e81b12ea46d28a06a81f99" }
 backend = "npm:commitlint"
 specifiers = [
     "21.2.2",
