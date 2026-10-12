@@ -47,10 +47,6 @@
       ]
     }
   },
-  "overrides": {
-    "diff": "^8.0.4",
-    "serialize-javascript": "^7.0.6"
-  },
   "dependencies": {
     "find-root": "^1.1.0",
     "open": "^11.0.4"

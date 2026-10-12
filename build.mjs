@@ -31,7 +31,7 @@ async function main() {
   const ctx = await context({
     entryPoints: ["src/extension.ts"],
     bundle: true,
-    format: "cjs",
+    format: "esm",
     minify: isProduction,
     sourcemap: !isProduction,
     sourcesContent: false,
@@ -39,6 +39,10 @@ async function main() {
     outfile: "dist/extension.js",
     external: ["vscode"],
     logLevel: "silent",
+    banner: {
+      // Polyfill require in ESM context
+      js: "import { createRequire } from 'module'; const require = createRequire(import.meta.url);",
+    },
     plugins: [
       /* add to the end of plugins array */
       esbuildProblemMatcherPlugin,
