@@ -200,7 +200,7 @@ url = "https://nodejs.org/dist/v26.12.0/node-v26.12.0-darwin-x64.tar.gz"
 
 [[tools."npm:@vscode/vsce"]]
 version = "4.0.0"
-aube = { path = ".mise/locks/npm-vscode-vsce/4.0.0", digest = "sha256:74af375ffbf7765d5c770cf315f380e9488b83b5d5f6e45e47bf46518f2c7594" }
+aube = { path = ".mise/locks/npm-vscode-vsce/4.0.0", digest = "sha256:61ed098b55fcb98830ce2f99db496cb2d5d0ab1b8cb0758b883a67d8b5ad5eb8" }
 backend = "npm:@vscode/vsce"
 specifiers = [
     "4.0.0",
@@ -215,7 +215,7 @@ specifiers = ["1.21.0"]
 
 [[tools."npm:commitlint"]]
 version = "21.2.3"
-aube = { path = ".mise/locks/npm-commitlint/21.2.3", digest = "sha256:42fb91728f5cfc48ca44d1a83acfee563ddc5f537836ffae48081264c8bcf69c" }
+aube = { path = ".mise/locks/npm-commitlint/21.2.3", digest = "sha256:a77a53b9374b5d8ab3270c5fe8157a56fac37133352f71bb5db8ff3c3edab166" }
 backend = "npm:commitlint"
 specifiers = ["21.2.3"]
 
