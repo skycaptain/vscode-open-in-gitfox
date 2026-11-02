@@ -2,6 +2,6 @@
   "name": "mise-npm-install",
   "private": true,
   "dependencies": {
-    "@vscode/vsce": "4.0.0"
+    "@vscode/vsce": "4.1.0"
   }
 }
