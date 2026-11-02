@@ -27,6 +27,9 @@
     "watch:tests": "tsc -p . -w --outDir out",
     "watch:tsc": "tsc --noEmit --watch --project tsconfig.json"
   },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  },
   "contributes": {
     "commands": [
       {
@@ -65,8 +68,5 @@
   },
   "engines": {
     "vscode": "^1.140.0"
-  },
-  "allowScripts": {
-    "esbuild@0.28.2": true
   }
 }
