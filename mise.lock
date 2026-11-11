@@ -197,19 +197,19 @@ url = "https://nodejs.org/dist/v26.13.0/node-v26.13.0-darwin-x64.tar.gz"
 
 [[tools."npm:@vscode/vsce"]]
 version = "4.1.0"
-aube = { path = ".mise/locks/npm-vscode-vsce/4.1.0", digest = "sha256:9d709374b5d29c2bfa49703a66e05e01901aef2b144c4ea632154c5186c95d5e" }
+aube = { path = ".mise/locks/npm-vscode-vsce/4.1.0", digest = "sha256:e9278c33d05a4d372c73c391b739f461372f8dd64f79a1c5ef58f8f786b52523" }
 backend = "npm:@vscode/vsce"
 specifiers = ["4.1.0"]
 
 [[tools."npm:actions-up"]]
 version = "2.0.0"
-aube = { path = ".mise/locks/npm-actions-up/2.0.0", digest = "sha256:debc0664a498eb73cc24c8660ded6b54a2367dc206e995b6d3295f61e5083e65" }
+aube = { path = ".mise/locks/npm-actions-up/2.0.0", digest = "sha256:d853137bed21210f3948e779f54a312c672ebae3b1064dbe3f8d9bd0529130f9" }
 backend = "npm:actions-up"
 specifiers = ["2.0.0"]
 
 [[tools."npm:commitlint"]]
 version = "21.2.4"
-aube = { path = ".mise/locks/npm-commitlint/21.2.4", digest = "sha256:ef635fe615840d05fc426858c36988f8cd36c132521e35663b07439166f95510" }
+aube = { path = ".mise/locks/npm-commitlint/21.2.4", digest = "sha256:1693081f1aba68b42e01de40f53b6112c8bb60dbe7cef19e62d571a08e925f50" }
 backend = "npm:commitlint"
 specifiers = ["21.2.4"]
 
@@ -221,6 +221,6 @@ specifiers = ["23.1.1"]
 
 [[tools."npm:sort-package-json"]]
 version = "4.1.0"
-aube = { path = ".mise/locks/npm-sort-package-json/4.1.0", digest = "sha256:7e1478f5db8a81571be1850e928b6980e3b6f749ac1e88c70c9338d0ff39ce6c" }
+aube = { path = ".mise/locks/npm-sort-package-json/4.1.0", digest = "sha256:08405cd80a7e45649dff5aca4f5192e81456c5910a5791fb327dd81ebe80398d" }
 backend = "npm:sort-package-json"
 specifiers = ["4.1.0"]
